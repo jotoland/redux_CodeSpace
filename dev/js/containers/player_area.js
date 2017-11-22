@@ -34,4 +34,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, {initializePlayerHP})(PlayerArea)
+export default connect(mapStateToProps, {initializePlayerHP})(PlayerArea);

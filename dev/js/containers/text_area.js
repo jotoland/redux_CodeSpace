@@ -61,4 +61,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, {toggleTurn, playerAttack})(PlayerArea)
+export default connect(mapStateToProps, {toggleTurn, playerAttack})(PlayerArea);

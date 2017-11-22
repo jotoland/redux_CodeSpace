@@ -13,7 +13,6 @@ export class EnemyArea extends React.Component {
     this.props.initializeEnemyHP(this.props.enemy);
   }
 
-
   render() {
     return (
       <div>
@@ -36,4 +35,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, {initializeEnemyHP})(EnemyArea)
+export default connect(mapStateToProps, {initializeEnemyHP})(EnemyArea);
