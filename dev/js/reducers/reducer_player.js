@@ -2,6 +2,7 @@ import {ENEMY_ATTACK, PLAYER_INIT} from '../actions/types';
 import {randomIntFromInterval} from '../helpers/helpers';
 
 let DEFAULT_STATE = {
+	name: 'YoyoNewWeb',
 	strength: randomIntFromInterval(6,12),
 	agility: randomIntFromInterval(6,12),
 	vitality: randomIntFromInterval(6,12),

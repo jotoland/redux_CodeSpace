@@ -15,11 +15,14 @@ export class PlayerArea extends React.Component {
   render() {
     return (
       <div>
-        Player Information:<br />
-        HP: {this.props.player.hp} <br />
-        Strength: {this.props.player.strength} <br />
-        Agility: {this.props.player.agility} <br />
-        Vitality: {this.props.player.vitality} <br />
+        <img src={require(`../../images/batman.jpg`)} />
+        <div className="playerInfo">
+          {this.props.player.name}<br />
+          HP: {this.props.player.hp} <br />
+          Strength: {this.props.player.strength} <br />
+          Agility: {this.props.player.agility} <br />
+          Vitality: {this.props.player.vitality} <br />
+        </div>
       </div>
     );
   }
