@@ -1,0 +1,31 @@
+$primary: #006699;
+
+h2 {
+	color: red;
+}
+
+.appContainer {
+	padding-left: 20px;
+}
+
+.enemyInfo {
+	padding-top: 10px;
+	font-size: 12px;
+	position: relative;
+}
+
+.playerInfo {
+	font-size: 12px;
+	background: white;
+	width: 80px;
+	position: relative;
+	margin-left: 65px;
+}
+
+.playerBtns {
+	padding-left: 10px;
+}
+
+.btnGap {
+	padding-left: 5px;
+}
