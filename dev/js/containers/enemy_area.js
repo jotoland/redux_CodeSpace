@@ -18,7 +18,6 @@ export class EnemyArea extends React.Component {
       <div>
         <img src={require(`../../images/enemy.jpg`)} />
         <div className="enemyInfo">
-        
           {this.props.enemy.name}<br />
           HP: {this.props.enemy.hp} <br />
           Strength: {this.props.enemy.strength} <br />

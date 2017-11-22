@@ -29,7 +29,12 @@ export class PlayerArea extends React.Component {
       <div>
         Player Turn<br />
         Choose an action:
-        {attack}{magic}{item}{endTurn}
+        <span className="playerBtns">
+          {attack}<span className="btnGap" />
+          {magic}<span className="btnGap" />
+          {item}<span className="btnGap" />
+          {endTurn}
+        </span>
       </div>
     );
   }
