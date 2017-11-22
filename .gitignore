@@ -6,3 +6,7 @@ npm-debug.log
 # IntelliJ
 *.iml
 /.idea
+
+.idea
+node_modules
+/src/js/bundle.min.js
