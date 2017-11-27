@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {initializeEnemyHP} from '../actions';
+import {enemy} from '../../images';
 
 
 export class EnemyArea extends React.Component {
@@ -16,7 +17,7 @@ export class EnemyArea extends React.Component {
   render() {
     return (
       <div>
-        <img src={require(`../../images/enemy.jpg`)} />
+        <img src={enemy} />
         <div className="enemyInfo">
           {this.props.enemy.name}<br />
           HP: {this.props.enemy.hp} <br />

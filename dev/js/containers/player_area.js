@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {initializePlayerHP} from '../actions';
+import {batman} from '../../images';
 
 export class PlayerArea extends React.Component {
 
@@ -15,7 +16,7 @@ export class PlayerArea extends React.Component {
   render() {
     return (
       <div>
-      <img src={require(`../../images/batman.jpg`)} />
+      <img src={batman} />
         <span className="playerInfo">
           {this.props.player.name}<br />
           HP: {this.props.player.hp} <br />
