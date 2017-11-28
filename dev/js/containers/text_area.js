@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { toggleTurn, playerAttack } from '../actions/index';
+import { toggleTurn, playerAttack, enemyAttack } from '../actions/index';
 
 export class PlayerArea extends React.Component {
 
@@ -9,6 +9,7 @@ export class PlayerArea extends React.Component {
 
     this.callToggleTurn = this.callToggleTurn.bind(this);
     this.callPlayerAttack = this.callPlayerAttack.bind(this);
+    this.callEnemyAttack = this.callEnemyAttack.bind(this);
   }
 
   callToggleTurn() {
@@ -17,7 +18,16 @@ export class PlayerArea extends React.Component {
 
   callPlayerAttack() {
     this.props.playerAttack(this.props.player, this.props.enemy);
+//TODO: need some type of animation for PLAYER attack
     this.callToggleTurn();
+    setTimeout(() => {
+//TODO: need some type of animation for ENEMY attack
+      this.callEnemyAttack();
+    }, 210);
+  }
+
+  callEnemyAttack() {
+    this.props.enemyAttack(this.props.enemy, this.props.player);
   }
 
   renderPlayerTurn() {
@@ -66,4 +76,8 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, {toggleTurn, playerAttack})(PlayerArea);
+export default connect(mapStateToProps, {
+  toggleTurn,
+  playerAttack,
+  enemyAttack
+})(PlayerArea);
