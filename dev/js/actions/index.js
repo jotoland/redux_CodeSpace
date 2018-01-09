@@ -31,7 +31,6 @@ export function playerAttack(player, enemy) {
 
 export function enemyAttack(enemy, player) {
 	player.hp = player.hp - calculateDamage(enemy.strength, enemy.modifier);
-	console.log("enemy attacking");
 	return {
 		type: ENEMY_ATTACK,
 		payload: player

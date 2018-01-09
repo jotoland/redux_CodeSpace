@@ -10,4 +10,4 @@ npm-debug.log
 .idea
 node_modules
 /src/js/bundle.min.js
-
+mintty.exe.stackdump
